@@ -1,0 +1,19 @@
+<main>
+  <H1>Using <b>Async</b> and <b>Observable&lt;string[]&gt;</b></H1>
+  <h2>With Aquire Token</h2>
+  <li *ngFor="let m of stuffAsyncAquireToken | async">    
+      {{m}}    
+  </li>
+  <h2>NO Aquire Token</h2>
+  <li *ngFor="let m of stuffAsyncNoAquireToken | async">    
+      {{m}}    
+  </li>
+  <br>
+
+  <H1>Using string[] - Aquire Token</H1>    
+  <h2>Manual Refresh</h2>
+  <p>comment this.ref.detectChanges(); in stuff.component.ts and se this list not refreshing when data is recieved.</p>
+  <li *ngFor="let m of stuffSyncManualRefresh">    
+      {{m}}    
+  </li>  
+</main>
