@@ -17,6 +17,6 @@ export class SecretService {
     }
 
     public get apiClientId(){
-        return "bf645b71-6ff3-42c5-9739-f29a6acf688e";
+        return this.settings.clientId;
     }
 }
